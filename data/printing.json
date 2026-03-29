@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "source": "Printing & Stationery Dept, Mizoram (simulated)",
+    "totalAnnualBudgetLakh": 480,
+    "printingPressLocations": ["Aizawl (HQ)", "Lunglei"],
+    "totalActiveOrders": 142
+  },
+  "districts": {
+    "aizawl": {
+      "name": "Aizawl",
+      "stationeryDemandUnits": 48200,
+      "stationerySupplied": 46800,
+      "fulfillmentPercent": 97,
+      "printingOrdersPending": 8,
+      "printingOrdersCompleted": 124,
+      "avgTurnaroundDays": 3,
+      "budgetUtilizedPercent": 84
+    },
+    "lunglei": {
+      "name": "Lunglei",
+      "stationeryDemandUnits": 18400,
+      "stationerySupplied": 14200,
+      "fulfillmentPercent": 77,
+      "printingOrdersPending": 14,
+      "printingOrdersCompleted": 48,
+      "avgTurnaroundDays": 9,
+      "budgetUtilizedPercent": 68
+    },
+    "champhai": {
+      "name": "Champhai",
+      "stationeryDemandUnits": 12200,
+      "stationerySupplied": 11400,
+      "fulfillmentPercent": 93,
+      "printingOrdersPending": 4,
+      "printingOrdersCompleted": 38,
+      "avgTurnaroundDays": 5,
+      "budgetUtilizedPercent": 76
+    },
+    "kolasib": {
+      "name": "Kolasib",
+      "stationeryDemandUnits": 8400,
+      "stationerySupplied": 8200,
+      "fulfillmentPercent": 98,
+      "printingOrdersPending": 2,
+      "printingOrdersCompleted": 28,
+      "avgTurnaroundDays": 3,
+      "budgetUtilizedPercent": 82
+    },
+    "lawngtlai": {
+      "name": "Lawngtlai",
+      "stationeryDemandUnits": 14200,
+      "stationerySupplied": 9800,
+      "fulfillmentPercent": 69,
+      "printingOrdersPending": 18,
+      "printingOrdersCompleted": 32,
+      "avgTurnaroundDays": 14,
+      "budgetUtilizedPercent": 52
+    },
+    "mamit": {
+      "name": "Mamit",
+      "stationeryDemandUnits": 9200,
+      "stationerySupplied": 8400,
+      "fulfillmentPercent": 91,
+      "printingOrdersPending": 5,
+      "printingOrdersCompleted": 24,
+      "avgTurnaroundDays": 6,
+      "budgetUtilizedPercent": 72
+    },
+    "serchhip": {
+      "name": "Serchhip",
+      "stationeryDemandUnits": 6200,
+      "stationerySupplied": 6100,
+      "fulfillmentPercent": 98,
+      "printingOrdersPending": 1,
+      "printingOrdersCompleted": 18,
+      "avgTurnaroundDays": 3,
+      "budgetUtilizedPercent": 88
+    },
+    "saiha": {
+      "name": "Saiha",
+      "stationeryDemandUnits": 7800,
+      "stationerySupplied": 6200,
+      "fulfillmentPercent": 79,
+      "printingOrdersPending": 10,
+      "printingOrdersCompleted": 22,
+      "avgTurnaroundDays": 11,
+      "budgetUtilizedPercent": 61
+    },
+    "hnahthial": {
+      "name": "Hnahthial",
+      "stationeryDemandUnits": 7200,
+      "stationerySupplied": 6400,
+      "fulfillmentPercent": 89,
+      "printingOrdersPending": 6,
+      "printingOrdersCompleted": 20,
+      "avgTurnaroundDays": 7,
+      "budgetUtilizedPercent": 66
+    },
+    "khawzawl": {
+      "name": "Khawzawl",
+      "stationeryDemandUnits": 7600,
+      "stationerySupplied": 7000,
+      "fulfillmentPercent": 92,
+      "printingOrdersPending": 4,
+      "printingOrdersCompleted": 22,
+      "avgTurnaroundDays": 5,
+      "budgetUtilizedPercent": 74
+    },
+    "saitual": {
+      "name": "Saitual",
+      "stationeryDemandUnits": 5800,
+      "stationerySupplied": 5600,
+      "fulfillmentPercent": 97,
+      "printingOrdersPending": 2,
+      "printingOrdersCompleted": 16,
+      "avgTurnaroundDays": 3,
+      "budgetUtilizedPercent": 80
+    }
+  },
+  "stateSummary": {
+    "avgFulfillment": 89,
+    "totalPendingOrders": 74,
+    "underservedDistricts": ["Lawngtlai", "Lunglei", "Saiha"],
+    "totalBudgetUtilized": 74
+  }
+}

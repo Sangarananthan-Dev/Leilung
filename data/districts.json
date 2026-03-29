@@ -1,0 +1,258 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mamit",
+        "name": "Mamit",
+        "headquarter": "Mamit",
+        "centerLat": 24.02,
+        "centerLng": 92.44
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.22, 23.78],
+            [92.54, 23.7],
+            [92.63, 24.0],
+            [92.51, 24.28],
+            [92.24, 24.22],
+            [92.22, 23.78]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kolasib",
+        "name": "Kolasib",
+        "headquarter": "Kolasib",
+        "centerLat": 24.26,
+        "centerLng": 92.86
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.56, 24.08],
+            [92.93, 24.04],
+            [93.03, 24.24],
+            [92.94, 24.46],
+            [92.63, 24.43],
+            [92.56, 24.08]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "aizawl",
+        "name": "Aizawl",
+        "headquarter": "Aizawl",
+        "centerLat": 23.76,
+        "centerLng": 92.78
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.52, 23.46],
+            [92.86, 23.42],
+            [93.02, 23.7],
+            [92.94, 24.03],
+            [92.61, 24.02],
+            [92.52, 23.46]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "saitual",
+        "name": "Saitual",
+        "headquarter": "Saitual",
+        "centerLat": 23.97,
+        "centerLng": 93.13
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.97, 23.8],
+            [93.18, 23.76],
+            [93.28, 23.95],
+            [93.22, 24.18],
+            [93.03, 24.15],
+            [92.97, 23.8]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "champhai",
+        "name": "Champhai",
+        "headquarter": "Champhai",
+        "centerLat": 23.96,
+        "centerLng": 93.31
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [93.11, 23.56],
+            [93.39, 23.51],
+            [93.49, 23.82],
+            [93.45, 24.18],
+            [93.2, 24.16],
+            [93.11, 23.56]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khawzawl",
+        "name": "Khawzawl",
+        "headquarter": "Khawzawl",
+        "centerLat": 23.68,
+        "centerLng": 93.19
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.99, 23.42],
+            [93.24, 23.38],
+            [93.36, 23.62],
+            [93.3, 23.86],
+            [93.06, 23.84],
+            [92.99, 23.42]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "serchhip",
+        "name": "Serchhip",
+        "headquarter": "Serchhip",
+        "centerLat": 23.36,
+        "centerLng": 92.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.66, 23.06],
+            [92.98, 23.02],
+            [93.08, 23.26],
+            [93.01, 23.58],
+            [92.73, 23.58],
+            [92.66, 23.06]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hnahthial",
+        "name": "Hnahthial",
+        "headquarter": "Hnahthial",
+        "centerLat": 22.99,
+        "centerLng": 92.88
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.64, 22.74],
+            [92.98, 22.7],
+            [93.08, 22.94],
+            [93.02, 23.22],
+            [92.72, 23.19],
+            [92.64, 22.74]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lunglei",
+        "name": "Lunglei",
+        "headquarter": "Lunglei",
+        "centerLat": 22.92,
+        "centerLng": 92.64
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.34, 22.58],
+            [92.76, 22.5],
+            [92.91, 22.74],
+            [92.82, 23.12],
+            [92.44, 23.16],
+            [92.34, 22.58]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lawngtlai",
+        "name": "Lawngtlai",
+        "headquarter": "Lawngtlai",
+        "centerLat": 22.4,
+        "centerLng": 92.51
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.24, 22.08],
+            [92.61, 22.0],
+            [92.77, 22.24],
+            [92.7, 22.6],
+            [92.34, 22.64],
+            [92.24, 22.08]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "saiha",
+        "name": "Saiha",
+        "headquarter": "Saiha",
+        "centerLat": 22.36,
+        "centerLng": 93.09
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.77, 21.95],
+            [93.16, 21.9],
+            [93.36, 22.16],
+            [93.32, 22.6],
+            [92.89, 22.63],
+            [92.77, 21.95]
+          ]
+        ]
+      }
+    }
+  ]
+}
