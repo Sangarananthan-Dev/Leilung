@@ -38,7 +38,7 @@ export default async function Page({ params }) {
       <Breadcrumbs
         items={[
           { href: "/", label: "Leilung" },
-          { href: "/food", label: "Food & PDS" },
+          { href: "/food", label: "Food & Public Distribution System" },
           { href: `/food/${district}`, label: districtData.districtName },
           { label: `FPS ${detail.shopId}` },
         ]}
@@ -51,7 +51,7 @@ export default async function Page({ params }) {
               `Shop ID: ${detail.shopId}`,
               `Proprietor: ${detail.proprietor}`,
               `Village: ${detail.village}`,
-              `e-PoS device: ${detail.ePosDevice}`,
+              `Digital ration device: ${detail.ePosDevice}`,
               `GPS coordinates: ${detail.coordinates}`,
               `Beneficiaries served: ${detail.beneficiariesServed}`,
               `Operating since: ${detail.operatingSince}`,

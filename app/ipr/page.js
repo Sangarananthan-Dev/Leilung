@@ -17,10 +17,13 @@ export default function Page() {
     <LeilungShell
       activeDept="ipr"
       subtitle="Scheme awareness, district DIPRO performance, pending publications, and statewide reach."
-      title="Information & PR Overview"
+      title="Information & Public Relations Overview"
     >
       <Breadcrumbs
-        items={[{ href: "/", label: "Leilung" }, { label: "Information & PR" }]}
+        items={[
+          { href: "/", label: "Leilung" },
+          { label: "Information & Public Relations" },
+        ]}
       />
 
       <div className="space-y-6">

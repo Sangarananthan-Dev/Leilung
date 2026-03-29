@@ -12,14 +12,11 @@ export default function Page() {
 
   return (
     <LeilungShell
-      subtitle="Governance grounded in data · minister-wide operational view across Food, Land Revenue, Information & PR, and Printing."
+      subtitle="Operational view across Food, Land Revenue, Information & Public Relations, and Printing."
       title="Leilung Resource & Land Governance Dashboard"
     >
       <div className="space-y-6">
-        <SectionCard
-          subtitle="The first ministerial view: critical cross-department pressure points and direct entry into every department workflow."
-          title="State At A Glance"
-        >
+        <SectionCard title="State At A Glance">
           <div className="grid gap-4 lg:grid-cols-[1.25fr_0.95fr]">
             <div className="grid gap-4">
               <div className="grid gap-4 md:grid-cols-3">
@@ -89,7 +86,7 @@ export default function Page() {
               { key: "district", label: "District" },
               {
                 key: "food",
-                label: "Food & PDS",
+                label: "Food & Public Distribution System",
                 render: (row) => (
                   <Link
                     className="transition hover:text-[var(--accent-land)]"
@@ -113,7 +110,7 @@ export default function Page() {
               },
               {
                 key: "ipr",
-                label: "Info & PR",
+                label: "Information & Public Relations",
                 render: (row) => (
                   <Link
                     className="transition hover:text-[var(--accent-land)]"

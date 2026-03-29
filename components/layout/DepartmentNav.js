@@ -8,15 +8,25 @@ export function DepartmentNav({ activeDept }) {
         <Link
           className={`rounded-xl px-4 py-2 text-sm transition ${
             !activeDept
-              ? "bg-white text-[var(--text-primary)]"
+              ? "bg-white"
               : "text-[var(--text-muted)] hover:bg-white/5 hover:text-white"
           }`}
           href="/"
+          style={
+            !activeDept
+              ? {
+                  color: "#172117",
+                  fontWeight: 600,
+                }
+              : undefined
+          }
         >
           State At A Glance
         </Link>
 
-        {Object.values(DEPARTMENTS).map((dept) => {
+        {Object.values(DEPARTMENTS)
+          .filter((dept) => dept.key !== "printing")
+          .map((dept) => {
           const isActive = dept.key === activeDept;
 
           return (
@@ -41,7 +51,7 @@ export function DepartmentNav({ activeDept }) {
               {dept.label}
             </Link>
           );
-        })}
+          })}
       </div>
     </nav>
   );

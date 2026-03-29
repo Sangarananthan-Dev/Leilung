@@ -1,8 +1,16 @@
 const TAB_META = [
-  { id: "food", label: "Food & PDS", accent: "#f59e0b" },
+  {
+    id: "food",
+    label: "Food & Public Distribution System",
+    accent: "#f59e0b",
+  },
   { id: "land", label: "Land Revenue", accent: "#22c55e" },
-  { id: "ipr", label: "Information & PR", accent: "#60a5fa" },
-  { id: "printing", label: "Printing", accent: "#a78bfa" },
+  {
+    id: "ipr",
+    label: "Information & Public Relations",
+    accent: "#60a5fa",
+  },
+  // { id: "printing", label: "Printing", accent: "#a78bfa" },
 ];
 
 export function DeptTabs({ activeDept, className = "", onChange }) {

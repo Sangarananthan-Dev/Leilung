@@ -21,12 +21,12 @@ export default async function Page({ params }) {
     <LeilungShell
       activeDept="ipr"
       subtitle="District-level analysis of scheme awareness gaps, publication backlog, and outreach planning."
-      title={`${data.districtName} Information & PR Detail`}
+      title={`${data.districtName} Information & Public Relations Detail`}
     >
       <Breadcrumbs
         items={[
           { href: "/", label: "Leilung" },
-          { href: "/ipr", label: "Information & PR" },
+          { href: "/ipr", label: "Information & Public Relations" },
           { label: data.districtName },
         ]}
       />

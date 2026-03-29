@@ -1,4 +1,3 @@
-import { RotatingAlertFeed } from "@/components/alerts/RotatingAlertFeed";
 import { InsightChart } from "@/components/charts/InsightChart";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { LeilungShell } from "@/components/layout/LeilungShell";
@@ -22,11 +21,14 @@ export default function Page() {
   return (
     <LeilungShell
       activeDept="food"
-      subtitle="NFSA coverage, distribution efficiency, e-PoS integrity, and FPS-level operational risk."
-      title="Food & PDS Overview"
+      subtitle="NFSA coverage, distribution efficiency, digital ration device integrity, and ration-shop operational risk."
+      title="Food & Public Distribution System Overview"
     >
       <Breadcrumbs
-        items={[{ href: "/", label: "Leilung" }, { label: "Food & PDS" }]}
+        items={[
+          { href: "/", label: "Leilung" },
+          { label: "Food & Public Distribution System" },
+        ]}
       />
 
       <div className="space-y-6">
@@ -41,7 +43,7 @@ export default function Page() {
 
         <SectionCard
           id="district-stock-table"
-          subtitle="Sortable state view of beneficiary coverage, stock pressure, ghost flags, and SMART PDS status."
+          subtitle="State view of beneficiary coverage, stock pressure, ghost flags, and Smart Public Distribution System status."
           title="District Comparison Table"
         >
           <DataTable
@@ -52,14 +54,20 @@ export default function Page() {
                 href: (row) => districtPath("food", row.districtId),
               },
               { key: "totalBeneficiaries", label: "Total Beneficiaries" },
-              { key: "fpsShops", label: "FPS Shops" },
-              { key: "ePosActive", label: "e-PoS Active" },
+              { key: "fpsShops", label: "Ration Shops" },
+              {
+                key: "ePosActive",
+                label: "Digital Ration Device Active",
+              },
               { key: "distributionPercent", label: "Distribution %" },
-              { key: "undistributedStockQtl", label: "Undist. Stock (qtl)" },
+              {
+                key: "undistributedStockQtl",
+                label: "Undistributed Stock (qtl)",
+              },
               { key: "ghostCount", label: "Ghost Count" },
               {
                 key: "smartPdsStatus",
-                label: "Smart PDS Status",
+                label: "Smart Public Distribution System Status",
                 render: (row) => (
                   <StatBadge tone={smartPdsTone(row.smartPdsStatus)}>
                     {row.smartPdsStatus}
@@ -113,13 +121,14 @@ export default function Page() {
           <InsightChart
             data={data.ePosDonut}
             keys={[]}
-            subtitle="Enrollment split across all FPS shops."
-            title="e-PoS Adoption"
+            subtitle="Enrollment split across all ration shops."
+            title="Digital Ration Device Adoption"
             type="pie"
             xKey="label"
           />
         </div>
 
+        {/*
         <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
           <SectionCard
             id="ghost-report"
@@ -143,6 +152,7 @@ export default function Page() {
 
           <RotatingAlertFeed alerts={data.alerts} title="Food Live Feed" />
         </div>
+        */}
       </div>
     </LeilungShell>
   );

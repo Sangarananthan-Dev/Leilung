@@ -23,12 +23,12 @@ export default async function Page({ params }) {
     <LeilungShell
       activeDept="food"
       subtitle="District-level beneficiary integrity, shop performance, and operational issues."
-      title={`${data.districtName} Food & PDS Detail`}
+      title={`${data.districtName} Food & Public Distribution System Detail`}
     >
       <Breadcrumbs
         items={[
           { href: "/", label: "Leilung" },
-          { href: "/food", label: "Food & PDS" },
+          { href: "/food", label: "Food & Public Distribution System" },
           { label: data.districtName },
         ]}
       />
@@ -65,7 +65,7 @@ export default async function Page({ params }) {
 
         <SectionCard
           subtitle={`${data.totalShops} total rows in district records; representative sample shown here for drill-through.`}
-          title="FPS Shop Performance"
+          title="Ration Shop Performance"
         >
           <DataTable
             columns={[
@@ -76,7 +76,7 @@ export default async function Page({ params }) {
               },
               { key: "shopName", label: "Shop Name" },
               { key: "village", label: "Village" },
-              { key: "ePos", label: "e-PoS" },
+              { key: "ePos", label: "Digital Ration Device" },
               { key: "lastTransaction", label: "Last Transaction" },
               { key: "stockHeld", label: "Stock Held (qtl)" },
               { key: "distributionPercent", label: "Distribution %" },

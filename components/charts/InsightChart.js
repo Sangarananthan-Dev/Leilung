@@ -27,6 +27,7 @@ function ChartBody({ data, keys, type, xKey }) {
             data={data}
             dataKey="value"
             innerRadius={62}
+            nameKey="label"
             outerRadius={96}
             paddingAngle={3}
           >
@@ -34,7 +35,11 @@ function ChartBody({ data, keys, type, xKey }) {
               <Cell key={entry.label} fill={entry.color} />
             ))}
           </Pie>
-          <Tooltip />
+          <Tooltip
+            formatter={(value, _name, item) => {
+              return [value, item?.payload?.label ?? "Value"];
+            }}
+          />
           <Legend />
         </PieChart>
       </ResponsiveContainer>
@@ -113,9 +118,9 @@ function ChartBody({ data, keys, type, xKey }) {
   );
 }
 
-export function InsightChart({ data, keys, subtitle, title, type, xKey }) {
+export function InsightChart({ data, id, keys, subtitle, title, type, xKey }) {
   return (
-    <div className="surface-card rounded-[1.75rem] p-5">
+    <div className="surface-card rounded-[1.75rem] p-5" id={id}>
       <div className="mb-4">
         <p className="text-xl font-bold tracking-[-0.02em] text-[var(--text-primary)]">
           {title}

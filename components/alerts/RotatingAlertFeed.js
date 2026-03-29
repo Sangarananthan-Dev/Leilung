@@ -32,9 +32,6 @@ export function RotatingAlertFeed({ alerts, title = "Live Feed" }) {
           <p className="text-xl font-bold tracking-[-0.02em] text-[var(--text-primary)]">
             {title}
           </p>
-          <p className="text-xs uppercase tracking-[0.22em] text-[var(--text-muted)]">
-            4 visible · rotates every 12 seconds
-          </p>
         </div>
       </div>
 

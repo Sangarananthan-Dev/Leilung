@@ -1,4 +1,3 @@
-import { RotatingAlertFeed } from "@/components/alerts/RotatingAlertFeed";
 import { InsightChart } from "@/components/charts/InsightChart";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { LeilungShell } from "@/components/layout/LeilungShell";
@@ -68,6 +67,7 @@ export default function Page() {
         <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
           <InsightChart
             data={data.digitisationProgress}
+            id="digitisation-progress"
             keys={[
               {
                 key: "digitisedPercent",
@@ -81,7 +81,9 @@ export default function Page() {
             xKey="district"
           />
 
+          {/*
           <RotatingAlertFeed alerts={data.alerts} title="Land Live Feed" />
+          */}
         </div>
 
         <SectionCard id="tax-adoption" title="e-Ram Rollout Status">
@@ -97,6 +99,7 @@ export default function Page() {
           />
         </SectionCard>
 
+        {/*
         <SectionCard
           subtitle="Implementation tracker for the minister's new enforcement act."
           title="Act 2026 Implementation Tracker"
@@ -110,6 +113,7 @@ export default function Page() {
             rows={data.actMilestones}
           />
         </SectionCard>
+        */}
       </div>
     </LeilungShell>
   );
