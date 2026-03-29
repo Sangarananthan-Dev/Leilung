@@ -27,30 +27,30 @@ export function DepartmentNav({ activeDept }) {
         {Object.values(DEPARTMENTS)
           .filter((dept) => dept.key !== "printing")
           .map((dept) => {
-          const isActive = dept.key === activeDept;
+            const isActive = dept.key === activeDept;
 
-          return (
-            <Link
-              key={dept.key}
-              className={`rounded-xl border px-4 py-2 text-sm transition ${
-                isActive
-                  ? "text-white"
-                  : "border-transparent text-[var(--text-muted)] hover:bg-white/5 hover:text-white"
-              }`}
-              href={dept.href}
-              style={
-                isActive
-                  ? {
-                      borderColor: dept.accent,
-                      backgroundColor: dept.accent,
-                      color: dept.key === "food" ? "#1f2937" : "#ffffff",
-                    }
-                  : undefined
-              }
-            >
-              {dept.label}
-            </Link>
-          );
+            return (
+              <Link
+                key={dept.key}
+                className={`rounded-xl border px-4 py-2 text-sm transition ${
+                  isActive
+                    ? "text-white"
+                    : "border-transparent text-[var(--text-muted)] hover:bg-white/5 hover:text-white"
+                }`}
+                href={dept.href}
+                style={
+                  isActive
+                    ? {
+                        borderColor: dept.accent,
+                        backgroundColor: dept.accent,
+                        color: dept.key === "food" ? "#1f2937" : "#ffffff",
+                      }
+                    : undefined
+                }
+              >
+                {dept.label}
+              </Link>
+            );
           })}
       </div>
     </nav>

@@ -1,4 +1,3 @@
-import { RotatingAlertFeed } from "@/components/alerts/RotatingAlertFeed";
 import { InsightChart } from "@/components/charts/InsightChart";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { LeilungShell } from "@/components/layout/LeilungShell";
@@ -60,10 +59,6 @@ export default function Page() {
             />
           </SectionCard>
 
-          <RotatingAlertFeed alerts={data.alerts} title="I&PR Live Feed" />
-        </div>
-
-        <div className="grid gap-6 xl:grid-cols-[1fr_1fr]">
           <InsightChart
             data={data.topSchemes}
             keys={[
@@ -74,18 +69,6 @@ export default function Page() {
             type="bar"
             xKey="scheme"
           />
-
-          <SectionCard title="Social Media Reach Panel">
-            <DataTable
-              columns={[
-                { key: "platform", label: "Platform" },
-                { key: "audience", label: "Audience" },
-                { key: "reach", label: "Reach" },
-                { key: "engagement", label: "Engagement" },
-              ]}
-              rows={data.socialPanel}
-            />
-          </SectionCard>
         </div>
       </div>
     </LeilungShell>
