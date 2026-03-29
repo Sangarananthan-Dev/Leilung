@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useEffectEvent, useState } from "react";
-import { ALERTS, buildSimulatedDatasets } from "@/lib/simulation";
+import { ALERTS, buildDashboardDatasets } from "@/lib/simulation";
 
 export function useSimulation() {
   const [tick, setTick] = useState(0);
@@ -29,7 +29,7 @@ export function useSimulation() {
   }, [advanceAlert, advanceData]);
 
   return {
-    datasets: buildSimulatedDatasets(tick),
+    datasets: buildDashboardDatasets(tick),
     alerts: ALERTS,
     alertIndex,
   };

@@ -26,7 +26,7 @@ export default function Page() {
                 {home.alerts.map((alert) => (
                   <article
                     key={alert.text}
-                    className="rounded-[1.5rem] border border-white/8 bg-black/10 p-4"
+                    className="rounded-[1.5rem] border border-[rgba(36,48,38,0.08)] bg-[var(--bg-elevated)] p-4"
                   >
                     <div className="mb-3">
                       <StatBadge
@@ -46,23 +46,26 @@ export default function Page() {
                 {home.departmentCards.map((dept) => (
                   <Link key={dept.key} href={dept.href}>
                     <article
-                      className="h-full rounded-[1.5rem] border p-5 transition hover:border-white/16"
+                      className="h-full rounded-[1.5rem] border p-5 transition hover:border-[rgba(36,48,38,0.18)]"
                       style={{
-                        borderColor: `${dept.accent}33`,
-                        background: `linear-gradient(180deg, ${dept.accent}12, rgba(17,31,19,0.95))`,
+                        borderColor: `${dept.accent}66`,
+                        backgroundColor: `${dept.accent}22`,
                       }}
                     >
-                      <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">
+                      <p
+                        className="text-xs font-semibold uppercase tracking-[0.24em]"
+                        style={{ color: dept.accent }}
+                      >
                         Department
                       </p>
-                      <p className="mt-3 text-lg font-semibold text-white">
+                      <p className="mt-3 text-xl font-bold tracking-[-0.02em] text-[var(--text-primary)]">
                         {dept.label}
                       </p>
                       <p className="mt-3 text-sm leading-6 text-[var(--text-primary)]">
                         {dept.summary}
                       </p>
                       <p
-                        className="mt-5 text-sm"
+                        className="mt-5 text-sm font-semibold"
                         style={{ color: dept.accent }}
                       >
                         Open overview →
@@ -73,10 +76,7 @@ export default function Page() {
               </div>
             </div>
 
-            <RotatingAlertFeed
-              alerts={home.ticker}
-              title="Simulated Statewide Feed"
-            />
+            <RotatingAlertFeed alerts={home.ticker} title="Statewide Feed" />
           </div>
         </SectionCard>
 
@@ -92,7 +92,7 @@ export default function Page() {
                 label: "Food & PDS",
                 render: (row) => (
                   <Link
-                    className="transition hover:text-white"
+                    className="transition hover:text-[var(--accent-land)]"
                     href={districtPath("food", row.districtId)}
                   >
                     {row.food}
@@ -104,7 +104,7 @@ export default function Page() {
                 label: "Land Revenue",
                 render: (row) => (
                   <Link
-                    className="transition hover:text-white"
+                    className="transition hover:text-[var(--accent-land)]"
                     href={districtPath("land", row.districtId)}
                   >
                     {row.land}
@@ -116,7 +116,7 @@ export default function Page() {
                 label: "Info & PR",
                 render: (row) => (
                   <Link
-                    className="transition hover:text-white"
+                    className="transition hover:text-[var(--accent-land)]"
                     href={districtPath("ipr", row.districtId)}
                   >
                     {row.ipr}
@@ -128,7 +128,7 @@ export default function Page() {
                 label: "Printing",
                 render: (row) => (
                   <Link
-                    className="transition hover:text-white"
+                    className="transition hover:text-[var(--accent-land)]"
                     href={districtPath("printing", row.districtId)}
                   >
                     {row.printing}

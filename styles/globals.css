@@ -11,19 +11,19 @@
 :root {
   --font-sora: "Sora";
   --font-dm-mono: "DM Mono";
-  --bg-canvas: #0c1a0e;
-  --bg-sidebar: #111f13;
-  --bg-surface: #162419;
-  --bg-elevated: #1b2d1f;
-  --border-soft: rgba(167, 243, 208, 0.11);
-  --text-primary: #e8f3e5;
-  --text-muted: #93aa96;
+  --bg-canvas: #f4efe3;
+  --bg-sidebar: #ffffff;
+  --bg-surface: #fffdf8;
+  --bg-elevated: #ece4d6;
+  --border-soft: rgba(36, 48, 38, 0.12);
+  --text-primary: #172117;
+  --text-muted: #667567;
   --accent-food: #f59e0b;
   --accent-land: #22c55e;
   --accent-ipr: #60a5fa;
   --accent-printing: #a78bfa;
   --accent-danger: #ef4444;
-  --shadow-surface: 0 24px 60px rgba(0, 0, 0, 0.35);
+  --shadow-surface: 0 18px 40px rgba(60, 52, 32, 0.12);
 }
 
 @theme inline {
@@ -39,14 +39,14 @@ html {
   background:
     radial-gradient(
       circle at top left,
-      rgba(34, 197, 94, 0.12),
-      transparent 28%
+      rgba(34, 197, 94, 0.08),
+      transparent 26%
     ),
     radial-gradient(
       circle at top right,
-      rgba(245, 158, 11, 0.1),
-      transparent 24%
-    ), linear-gradient(180deg, #102313 0%, #0c1a0e 100%);
+      rgba(245, 158, 11, 0.12),
+      transparent 22%
+    ), linear-gradient(180deg, #f9f5ec 0%, #f1ebde 100%);
   color: var(--text-primary);
 }
 
@@ -74,17 +74,13 @@ input {
 
 .surface-card {
   border: 1px solid var(--border-soft);
-  background: linear-gradient(
-    180deg,
-    rgba(22, 36, 25, 0.96),
-    rgba(17, 31, 19, 0.96)
-  );
+  background: var(--bg-surface);
   box-shadow: var(--shadow-surface);
 }
 
 .surface-panel {
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  background: rgba(17, 31, 19, 0.92);
+  border: 1px solid rgba(36, 48, 38, 0.12);
+  background: rgba(255, 252, 245, 0.96);
   backdrop-filter: blur(18px);
 }
 
@@ -103,10 +99,8 @@ input {
   position: relative;
   overflow: hidden;
   border-radius: 1.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  background:
-    linear-gradient(180deg, rgba(24, 39, 27, 0.96), rgba(17, 31, 19, 0.98)),
-    radial-gradient(circle at top left, rgba(34, 197, 94, 0.1), transparent 30%);
+  border: 1px solid rgba(36, 48, 38, 0.12);
+  background: #fffaf0;
   box-shadow: var(--shadow-surface);
 }
 
@@ -114,26 +108,26 @@ input {
 .maplibregl-map {
   width: 100%;
   height: 100%;
-  background: #102313;
+  background: #f3ecdd;
   font-family: var(--font-sora), sans-serif;
 }
 
 .leaflet-control-zoom {
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  border: 1px solid rgba(36, 48, 38, 0.14);
   overflow: hidden;
   box-shadow: var(--shadow-surface);
 }
 
 .leaflet-control-zoom a {
-  background: rgba(17, 31, 19, 0.92);
+  background: rgba(255, 252, 245, 0.98);
   color: var(--text-primary);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+  border-bottom: 1px solid rgba(36, 48, 38, 0.1);
 }
 
 .leaflet-tooltip.leilung-tooltip {
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  border: 1px solid rgba(36, 48, 38, 0.14);
   border-radius: 1rem;
-  background: rgba(11, 24, 14, 0.94);
+  background: rgba(255, 252, 245, 0.98);
   color: var(--text-primary);
   box-shadow: var(--shadow-surface);
   padding: 0.8rem 0.95rem;
@@ -150,14 +144,14 @@ input {
 }
 
 .maplibregl-ctrl-group {
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  border: 1px solid rgba(36, 48, 38, 0.14);
   overflow: hidden;
-  background: rgba(17, 31, 19, 0.9);
+  background: rgba(255, 252, 245, 0.98);
   box-shadow: var(--shadow-surface);
 }
 
 .maplibregl-ctrl button .maplibregl-ctrl-icon {
-  filter: invert(1);
+  filter: invert(0.1);
 }
 
 .alert-marquee {
@@ -177,11 +171,11 @@ input {
 }
 
 .scrollbar-thin::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.18);
+  background: rgba(36, 48, 38, 0.18);
   border-radius: 9999px;
 }
 

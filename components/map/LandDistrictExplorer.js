@@ -10,7 +10,7 @@ const LandDistrictMap2D = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="h-full w-full animate-pulse bg-[rgba(17,31,19,0.92)]" />
+      <div className="h-full w-full animate-pulse bg-[var(--bg-elevated)]" />
     ),
   },
 );
@@ -18,7 +18,7 @@ const LandDistrictMap2D = dynamic(
 const LeilungMap3D = dynamic(() => import("@/components/map/LeilungMap3D"), {
   ssr: false,
   loading: () => (
-    <div className="h-full w-full animate-pulse bg-[rgba(17,31,19,0.92)]" />
+    <div className="h-full w-full animate-pulse bg-[var(--bg-elevated)]" />
   ),
 });
 
@@ -59,7 +59,9 @@ export function LandDistrictExplorer({
     <section className="surface-card rounded-[1.75rem] p-5">
       <div className="mb-4 flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
         <div>
-          <p className="text-lg font-semibold text-white">Encroachment Map</p>
+          <p className="text-xl font-bold tracking-[-0.02em] text-[var(--text-primary)]">
+            Encroachment Map
+          </p>
           <p className="mt-1 text-sm text-[var(--text-muted)]">
             2D district case map and 3D terrain drilldown for enforcement
             review.
@@ -70,8 +72,8 @@ export function LandDistrictExplorer({
           <button
             className={`rounded-xl border px-4 py-2 text-sm transition ${
               view === "2d"
-                ? "border-white/14 bg-white/8 text-white"
-                : "border-white/10 bg-white/5 text-[var(--text-muted)] hover:text-white"
+                ? "border-[rgba(36,48,38,0.16)] bg-[var(--bg-elevated)] font-semibold text-[var(--text-primary)]"
+                : "border-[rgba(36,48,38,0.1)] bg-white text-[var(--text-muted)] hover:text-[var(--text-primary)]"
             }`}
             onClick={() => setView("2d")}
             type="button"
@@ -81,8 +83,8 @@ export function LandDistrictExplorer({
           <button
             className={`rounded-xl border px-4 py-2 text-sm transition ${
               view === "3d"
-                ? "border-emerald-400/30 bg-emerald-500/14 text-white"
-                : "border-emerald-400/18 bg-emerald-500/8 text-emerald-200"
+                ? "border-emerald-500/30 bg-emerald-500/14 font-semibold text-emerald-800"
+                : "border-emerald-500/18 bg-emerald-50 text-emerald-800"
             }`}
             onClick={() => setView("3d")}
             type="button"

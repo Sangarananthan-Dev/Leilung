@@ -59,7 +59,7 @@ export default async function Page({ params }) {
             ].map((item) => (
               <div
                 key={item}
-                className="rounded-[1.25rem] border border-white/8 bg-black/10 px-4 py-3 text-sm text-[var(--text-primary)]"
+                className="rounded-[1.25rem] border border-[rgba(36,48,38,0.08)] bg-[var(--bg-elevated)] px-4 py-3 text-sm font-medium text-[var(--text-primary)]"
               >
                 {item}
               </div>
@@ -106,7 +106,7 @@ export default async function Page({ params }) {
                 rows={detail.ghostFlags}
               />
             : <p className="text-sm text-[var(--text-muted)]">
-                No named ghost flags are attached to this simulated shop record.
+                No named ghost flags are attached to this shop record.
               </p>}
         </SectionCard>
 

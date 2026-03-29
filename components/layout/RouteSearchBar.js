@@ -108,15 +108,16 @@ export function RouteSearchBar() {
                         {Object.values(DEPARTMENTS).map((dept) => (
                           <button
                             key={dept.key}
-                            className="rounded-xl border px-3 py-2 text-left text-xs uppercase tracking-[0.18em] transition"
+                            className="rounded-xl border px-3 py-2 text-left text-xs font-semibold uppercase tracking-[0.18em] transition shadow-[0_4px_12px_rgba(0,0,0,0.08)]"
                             onMouseDown={(event) => {
                               event.preventDefault();
                               pushDistrict(dept.key, district.id);
                             }}
                             style={{
-                              borderColor: `${dept.accent}33`,
-                              backgroundColor: `${dept.accent}12`,
-                              color: dept.accent,
+                              borderColor: dept.accent,
+                              backgroundColor: dept.accent,
+                              color:
+                                dept.key === "food" ? "#1f2937" : "#ffffff",
                             }}
                             type="button"
                           >

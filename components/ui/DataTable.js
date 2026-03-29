@@ -17,7 +17,7 @@ export function DataTable({ columns, rows }) {
             {columns.map((column) => (
               <th
                 key={column.key}
-                className="border-b border-white/8 px-3 py-3 text-left text-xs uppercase tracking-[0.22em] text-[var(--text-muted)]"
+                className="border-b border-[rgba(36,48,38,0.1)] px-3 py-3 text-left text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--text-muted)]"
               >
                 {column.label}
               </th>
@@ -47,11 +47,11 @@ export function DataTable({ columns, rows }) {
                 return (
                   <td
                     key={`${column.key}-${columnIndex}`}
-                    className="border-b border-white/6 px-3 py-3 text-[var(--text-primary)]"
+                    className="border-b border-[rgba(36,48,38,0.06)] px-3 py-3 text-[15px] text-[var(--text-primary)]"
                   >
                     {href
                       ? <Link
-                          className="transition hover:text-white"
+                          className="font-medium transition hover:text-[var(--accent-land)]"
                           href={href}
                         >
                           {cell}

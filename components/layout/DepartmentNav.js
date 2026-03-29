@@ -8,7 +8,7 @@ export function DepartmentNav({ activeDept }) {
         <Link
           className={`rounded-xl px-4 py-2 text-sm transition ${
             !activeDept
-              ? "bg-white/8 text-white"
+              ? "bg-white text-[var(--text-primary)]"
               : "text-[var(--text-muted)] hover:bg-white/5 hover:text-white"
           }`}
           href="/"
@@ -31,8 +31,9 @@ export function DepartmentNav({ activeDept }) {
               style={
                 isActive
                   ? {
-                      borderColor: `${dept.accent}55`,
-                      backgroundColor: `${dept.accent}18`,
+                      borderColor: dept.accent,
+                      backgroundColor: dept.accent,
+                      color: dept.key === "food" ? "#1f2937" : "#ffffff",
                     }
                   : undefined
               }

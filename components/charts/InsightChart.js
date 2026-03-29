@@ -117,9 +117,13 @@ export function InsightChart({ data, keys, subtitle, title, type, xKey }) {
   return (
     <div className="surface-card rounded-[1.75rem] p-5">
       <div className="mb-4">
-        <p className="text-lg font-semibold text-white">{title}</p>
+        <p className="text-xl font-bold tracking-[-0.02em] text-[var(--text-primary)]">
+          {title}
+        </p>
         {subtitle
-          ? <p className="mt-1 text-sm text-[var(--text-muted)]">{subtitle}</p>
+          ? <p className="mt-1 text-sm leading-7 text-[var(--text-muted)]">
+              {subtitle}
+            </p>
           : null}
       </div>
 

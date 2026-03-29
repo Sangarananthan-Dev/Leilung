@@ -42,7 +42,7 @@ export default async function Page({ params }) {
             {data.headerStats.map((item) => (
               <div
                 key={item}
-                className="rounded-[1.25rem] border border-white/8 bg-black/10 px-4 py-3 text-sm text-[var(--text-primary)]"
+                className="rounded-[1.25rem] border border-[rgba(36,48,38,0.08)] bg-[var(--bg-elevated)] px-4 py-3 text-sm font-medium text-[var(--text-primary)]"
               >
                 {item}
               </div>
@@ -99,7 +99,7 @@ export default async function Page({ params }) {
               {data.issues.map((issue) => (
                 <article
                   key={issue}
-                  className="rounded-[1.25rem] border border-white/8 bg-black/10 px-4 py-3 text-sm leading-6 text-[var(--text-primary)]"
+                  className="rounded-[1.25rem] border border-[rgba(36,48,38,0.08)] bg-[var(--bg-elevated)] px-4 py-3 text-sm leading-6 text-[var(--text-primary)]"
                 >
                   {issue}
                 </article>
@@ -110,7 +110,7 @@ export default async function Page({ params }) {
           <InsightChart
             data={data.monthlyTrend}
             keys={[{ key: "value", label: "Distribution %", color: "#f59e0b" }]}
-            subtitle="Twelve-month pattern condensed into the current simulated reporting window."
+            subtitle="Twelve-month pattern condensed into the current reporting window."
             title="Monthly Distribution Trend"
             type="line"
             xKey="month"

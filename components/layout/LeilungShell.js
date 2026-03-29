@@ -11,10 +11,12 @@ export function LeilungShell({ activeDept = null, children, subtitle, title }) {
             <div className="flex min-w-0 items-center gap-4">
               <LeilungLogo />
               <div className="min-w-0">
-                <p className="text-lg font-semibold tracking-[0.04em] text-white lg:text-2xl">
+                <p className="text-xl font-bold tracking-[0.02em] text-white lg:text-3xl">
                   {title}
                 </p>
-                <p className="text-sm text-emerald-50/72">{subtitle}</p>
+                <p className="mt-1 text-sm leading-6 text-emerald-50/72">
+                  {subtitle}
+                </p>
               </div>
             </div>
 

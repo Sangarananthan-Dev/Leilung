@@ -132,7 +132,7 @@ export default function LeilungMap3D({ district, districtFeature, onBack }) {
 
       <div className="pointer-events-none absolute inset-x-4 top-4 z-[1100] flex items-start justify-between gap-4">
         <button
-          className="pointer-events-auto inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-[rgba(8,18,10,0.86)] px-4 py-3 text-sm text-white shadow-2xl"
+          className="pointer-events-auto inline-flex items-center gap-2 rounded-2xl border border-[rgba(36,48,38,0.14)] bg-[rgba(255,252,245,0.96)] px-4 py-3 text-sm font-medium text-[var(--text-primary)] shadow-2xl"
           onClick={onBack}
           type="button"
         >
@@ -141,7 +141,7 @@ export default function LeilungMap3D({ district, districtFeature, onBack }) {
         </button>
 
         <div className="surface-panel max-w-lg rounded-2xl px-4 py-3">
-          <p className="text-sm font-medium text-white">
+          <p className="text-sm font-semibold text-[var(--text-primary)]">
             Land Encroachment View - {district.name}
           </p>
           <p className="mt-1 text-xs uppercase tracking-[0.26em] text-[var(--accent-food)]">
@@ -159,7 +159,7 @@ export default function LeilungMap3D({ district, districtFeature, onBack }) {
           <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">
             Public land
           </p>
-          <p className="mono mt-2 text-lg text-red-200">
+          <p className="mono mt-2 text-lg font-semibold text-red-700">
             {district.encroachmentTypes.publicLand}
           </p>
         </div>
@@ -167,7 +167,7 @@ export default function LeilungMap3D({ district, districtFeature, onBack }) {
           <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">
             Village council
           </p>
-          <p className="mono mt-2 text-lg text-orange-200">
+          <p className="mono mt-2 text-lg font-semibold text-orange-700">
             {district.encroachmentTypes.villageCouncilLand}
           </p>
         </div>
@@ -175,7 +175,7 @@ export default function LeilungMap3D({ district, districtFeature, onBack }) {
           <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-muted)]">
             Community ground
           </p>
-          <p className="mono mt-2 text-lg text-amber-200">
+          <p className="mono mt-2 text-lg font-semibold text-amber-700">
             {district.encroachmentTypes.communityGround}
           </p>
         </div>

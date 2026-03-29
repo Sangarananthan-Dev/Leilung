@@ -29,7 +29,9 @@ export function RotatingAlertFeed({ alerts, title = "Live Feed" }) {
     <section className="surface-card rounded-[1.75rem] p-5">
       <div className="mb-4 flex items-center justify-between gap-3">
         <div>
-          <p className="text-lg font-semibold text-white">{title}</p>
+          <p className="text-xl font-bold tracking-[-0.02em] text-[var(--text-primary)]">
+            {title}
+          </p>
           <p className="text-xs uppercase tracking-[0.22em] text-[var(--text-muted)]">
             4 visible · rotates every 12 seconds
           </p>
@@ -43,7 +45,7 @@ export function RotatingAlertFeed({ alerts, title = "Live Feed" }) {
           return (
             <article
               key={alert}
-              className="alert-marquee rounded-2xl border border-white/8 bg-black/10 px-4 py-3"
+              className="alert-marquee rounded-2xl border border-[rgba(36,48,38,0.08)] bg-[var(--bg-elevated)] px-4 py-3"
             >
               <p
                 className={`mb-2 text-xs uppercase tracking-[0.22em] ${

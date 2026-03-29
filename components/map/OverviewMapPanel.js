@@ -8,7 +8,7 @@ import { DEPARTMENT_CONFIG } from "@/lib/leilung-config";
 const LeilungMap2D = dynamic(() => import("@/components/map/LeilungMap2D"), {
   ssr: false,
   loading: () => (
-    <div className="h-full w-full animate-pulse bg-[rgba(17,31,19,0.92)]" />
+    <div className="h-full w-full animate-pulse bg-[var(--bg-elevated)]" />
   ),
 });
 
@@ -44,7 +44,9 @@ export function OverviewMapPanel({
   return (
     <section className="surface-card rounded-[1.75rem] p-5">
       <div className="mb-4">
-        <p className="text-lg font-semibold text-white">{title}</p>
+        <p className="text-xl font-bold tracking-[-0.02em] text-[var(--text-primary)]">
+          {title}
+        </p>
         <p className="mt-1 text-sm leading-6 text-[var(--text-muted)]">
           {subtitle}
         </p>
